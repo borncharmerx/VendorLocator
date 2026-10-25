@@ -1,0 +1,8 @@
+// Shared, non-secret defaults. Put local API keys in ignored Local.xcconfig.
+PRODUCT_BUNDLE_IDENTIFIER = com.example.VendorLocator
+IPHONEOS_DEPLOYMENT_TARGET = 16.0
+SWIFT_VERSION = 5.0
+TARGETED_DEVICE_FAMILY = 1,2
+GOOGLE_MAPS_API_KEY = AIzaSyABnv8G-bmzU_1Rgy8J9b_4adE-SEf402I
+VENDOR_API_BASE_URL =
+#include? "Local.xcconfig"

@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000032 /* VendorLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000020 /* VendorLocatorApp.swift */; };
+		000000000000000000000033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000021 /* ContentView.swift */; };
+		000000000000000000000034 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000022 /* Vendor.swift */; };
+		000000000000000000000035 /* KeychainTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* KeychainTokenStore.swift */; };
+		000000000000000000000036 /* VendorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* VendorService.swift */; };
+		000000000000000000000037 /* VendorLocatorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* VendorLocatorStore.swift */; };
+		000000000000000000000038 /* GoogleMapsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* GoogleMapsConfiguration.swift */; };
+		000000000000000000000039 /* VendorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* VendorListView.swift */; };
+		00000000000000000000003A /* MapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000028 /* MapScreenView.swift */; };
+		00000000000000000000003B /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* GoogleMapView.swift */; };
+		00000000000000000000003C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002A /* SettingsView.swift */; };
+		00000000000000000000003D /* PlaceSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* PlaceSearchView.swift */; };
+		00000000000000000000003E /* vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002C /* vendors.json */; };
+		00000000000000000000003F /* VendorDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002E /* VendorDecodingTests.swift */; };
+		000000000000000000000044 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000042 /* GoogleMaps */; };
+		000000000000000000000045 /* GooglePlacesSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000043 /* GooglePlacesSwift */; };
+		000000000000000000000048 /* VendorLocatorBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004A /* VendorLocatorBehaviour.swift */; };
+		000000000000000000000049 /* VendorLocatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004B /* VendorLocatorInteractor.swift */; };
+		000000000000000000000050 /* VendorLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000053 /* VendorLocationManager.swift */; };
+		000000000000000000000051 /* VendorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000054 /* VendorDetailView.swift */; };
+		000000000000000000000052 /* ManualVendorEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000055 /* ManualVendorEntryView.swift */; };
+		000000000000000000000056 /* LocalVendorDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000057 /* LocalVendorDataService.swift */; };
+		000000000000000000000058 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000059 /* NetworkMonitor.swift */; };
+		00000000000000000000005A /* VendorListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000005B /* VendorListViewModel.swift */; };
+		00000000000000000000005C /* MapScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000005D /* MapScreenViewModel.swift */; };
+		00000000000000000000005E /* VendorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000005F /* VendorDetailViewModel.swift */; };
+		000000000000000000000060 /* ManualVendorEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000061 /* ManualVendorEntryViewModel.swift */; };
+		000000000000000000000062 /* PlaceSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000063 /* PlaceSearchViewModel.swift */; };
+		000000000000000000000064 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* SettingsViewModel.swift */; };
+		FED635B879BB424C9ED112FC /* VendorListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED112FD /* VendorListViewModelTests.swift */; };
+		FED635B879BB424C9ED112FE /* MapScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED112FF /* MapScreenViewModelTests.swift */; };
+		FED635B879BB424C9ED11300 /* VendorDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED11301 /* VendorDetailViewModelTests.swift */; };
+		FED635B879BB424C9ED11302 /* ManualVendorEntryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED11303 /* ManualVendorEntryViewModelTests.swift */; };
+		FED635B879BB424C9ED11304 /* PlaceSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED11305 /* PlaceSearchViewModelTests.swift */; };
+		FED635B879BB424C9ED11306 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED11307 /* SettingsViewModelTests.swift */; };
+		FED635B879BB424C9ED11308 /* VendorLocatorInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED635B879BB424C9ED11309 /* VendorLocatorInteractorTests.swift */; };
+		FFFFFFFFFFFFFFFFFFFFFFA1 /* TestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFFFFFFFFFFFFFFFFFFFFA2 /* TestDoubles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000004;
+			remoteInfo = VendorLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000006 /* VendorLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendorLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000007 /* VendorLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendorLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000020 /* VendorLocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocatorApp.swift; sourceTree = "<group>"; };
+		000000000000000000000021 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000022 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		000000000000000000000023 /* KeychainTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStore.swift; sourceTree = "<group>"; };
+		000000000000000000000024 /* VendorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorService.swift; sourceTree = "<group>"; };
+		000000000000000000000025 /* VendorLocatorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocatorStore.swift; sourceTree = "<group>"; };
+		000000000000000000000026 /* GoogleMapsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsConfiguration.swift; sourceTree = "<group>"; };
+		000000000000000000000027 /* VendorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListView.swift; sourceTree = "<group>"; };
+		000000000000000000000028 /* MapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenView.swift; sourceTree = "<group>"; };
+		000000000000000000000029 /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		00000000000000000000002A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		00000000000000000000002B /* PlaceSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchView.swift; sourceTree = "<group>"; };
+		00000000000000000000002C /* vendors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vendors.json; sourceTree = "<group>"; };
+		00000000000000000000002D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00000000000000000000002E /* VendorDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDecodingTests.swift; sourceTree = "<group>"; };
+		00000000000000000000002F /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		00000000000000000000004A /* VendorLocatorBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocatorBehaviour.swift; sourceTree = "<group>"; };
+		00000000000000000000004B /* VendorLocatorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocatorInteractor.swift; sourceTree = "<group>"; };
+		000000000000000000000053 /* VendorLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocationManager.swift; sourceTree = "<group>"; };
+		000000000000000000000054 /* VendorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000055 /* ManualVendorEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVendorEntryView.swift; sourceTree = "<group>"; };
+		000000000000000000000057 /* LocalVendorDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVendorDataService.swift; sourceTree = "<group>"; };
+		000000000000000000000059 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		00000000000000000000005B /* VendorListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListViewModel.swift; sourceTree = "<group>"; };
+		00000000000000000000005D /* MapScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewModel.swift; sourceTree = "<group>"; };
+		00000000000000000000005F /* VendorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000061 /* ManualVendorEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVendorEntryViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000063 /* PlaceSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000065 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED112FD /* VendorListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED112FF /* MapScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED11301 /* VendorDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED11303 /* ManualVendorEntryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVendorEntryViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED11305 /* PlaceSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED11307 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		FED635B879BB424C9ED11309 /* VendorLocatorInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLocatorInteractorTests.swift; sourceTree = "<group>"; };
+		FFFFFFFFFFFFFFFFFFFFFFA2 /* TestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDoubles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000044 /* GoogleMaps in Frameworks */,
+				000000000000000000000045 /* GooglePlacesSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000000C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000017 /* VendorLocator */,
+				00000000000000000000001E /* VendorLocatorTests */,
+				00000000000000000000001F /* Config */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000006 /* VendorLocator.app */,
+				000000000000000000000007 /* VendorLocatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000017 /* VendorLocator */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000001D /* Configuration */,
+				000000000000000000000021 /* ContentView.swift */,
+				2C076C7AD64C4F8FB0EAAC1A /* Data */,
+				E06C36139939498DAF46091E /* Features */,
+				00000000000000000000002D /* Info.plist */,
+				73E56791DFE9423B816241D9 /* Interactors */,
+				000000000000000000000018 /* Models */,
+				C6803D0D5A474334886B619D /* Network */,
+				00000000000000000000001C /* Resources */,
+				000000000000000000000020 /* VendorLocatorApp.swift */,
+			);
+			path = VendorLocator;
+			sourceTree = "<group>";
+		};
+		000000000000000000000018 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000022 /* Vendor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00000000000000000000001C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002C /* vendors.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00000000000000000000001D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000026 /* GoogleMapsConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		00000000000000000000001E /* VendorLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002E /* VendorDecodingTests.swift */,
+				FFFFFFFFFFFFFFFFFFFFFFA2 /* TestDoubles.swift */,
+				FED635B879BB424C9ED112FD /* VendorListViewModelTests.swift */,
+				FED635B879BB424C9ED112FF /* MapScreenViewModelTests.swift */,
+				FED635B879BB424C9ED11301 /* VendorDetailViewModelTests.swift */,
+				FED635B879BB424C9ED11303 /* ManualVendorEntryViewModelTests.swift */,
+				FED635B879BB424C9ED11305 /* PlaceSearchViewModelTests.swift */,
+				FED635B879BB424C9ED11307 /* SettingsViewModelTests.swift */,
+				FED635B879BB424C9ED11309 /* VendorLocatorInteractorTests.swift */,
+			);
+			path = VendorLocatorTests;
+			sourceTree = "<group>";
+		};
+		00000000000000000000001F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002F /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		234EE27367894B8DBB15FE1E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002A /* SettingsView.swift */,
+				000000000000000000000065 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C076C7AD64C4F8FB0EAAC1A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000023 /* KeychainTokenStore.swift */,
+				000000000000000000000057 /* LocalVendorDataService.swift */,
+				000000000000000000000025 /* VendorLocatorStore.swift */,
+				000000000000000000000053 /* VendorLocationManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		40B914C6BC9144D988244783 /* ManualVendorEntry */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000061 /* ManualVendorEntryViewModel.swift */,
+				000000000000000000000055 /* ManualVendorEntryView.swift */,
+			);
+			path = ManualVendorEntry;
+			sourceTree = "<group>";
+		};
+		73E56791DFE9423B816241D9 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000004B /* VendorLocatorInteractor.swift */,
+				00000000000000000000004A /* VendorLocatorBehaviour.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		8C3F7E9397F94EB8B8728CE4 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000005D /* MapScreenViewModel.swift */,
+				000000000000000000000028 /* MapScreenView.swift */,
+				000000000000000000000029 /* GoogleMapView.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		8F37F971659B4B54B511FF15 /* VendorList */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000005B /* VendorListViewModel.swift */,
+				000000000000000000000027 /* VendorListView.swift */,
+			);
+			path = VendorList;
+			sourceTree = "<group>";
+		};
+		A63012EEDF354C73BA6F4D0B /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000063 /* PlaceSearchViewModel.swift */,
+				00000000000000000000002B /* PlaceSearchView.swift */,
+			);
+			path = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		C6803D0D5A474334886B619D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000024 /* VendorService.swift */,
+				000000000000000000000059 /* NetworkMonitor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E06C36139939498DAF46091E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F971659B4B54B511FF15 /* VendorList */,
+				8C3F7E9397F94EB8B8728CE4 /* MapScreen */,
+				FED635B879BB424C9ED112FB /* VendorDetail */,
+				40B914C6BC9144D988244783 /* ManualVendorEntry */,
+				A63012EEDF354C73BA6F4D0B /* PlaceSearch */,
+				234EE27367894B8DBB15FE1E /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FED635B879BB424C9ED112FB /* VendorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000054 /* VendorDetailView.swift */,
+				00000000000000000000005F /* VendorDetailViewModel.swift */,
+			);
+			path = VendorDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000004 /* VendorLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000F /* Build configuration list for PBXNativeTarget "VendorLocator" */;
+			buildPhases = (
+				000000000000000000000008 /* Sources */,
+				000000000000000000000009 /* Frameworks */,
+				00000000000000000000000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VendorLocator;
+			packageProductDependencies = (
+				000000000000000000000042 /* GoogleMaps */,
+				000000000000000000000043 /* GooglePlacesSwift */,
+			);
+			productName = VendorLocator;
+			productReference = 000000000000000000000006 /* VendorLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000005 /* VendorLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000010 /* Build configuration list for PBXNativeTarget "VendorLocatorTests" */;
+			buildPhases = (
+				00000000000000000000000B /* Sources */,
+				00000000000000000000000C /* Frameworks */,
+				00000000000000000000000D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000047 /* PBXTargetDependency */,
+			);
+			name = VendorLocatorTests;
+			packageProductDependencies = (
+			);
+			productName = VendorLocatorTests;
+			productReference = 000000000000000000000007 /* VendorLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					000000000000000000000004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					000000000000000000000005 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 000000000000000000000004;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000000E /* Build configuration list for PBXProject "VendorLocator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+				000000000000000000000040 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				000000000000000000000041 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000004 /* VendorLocator */,
+				000000000000000000000005 /* VendorLocatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000003E /* vendors.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000000D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000032 /* VendorLocatorApp.swift in Sources */,
+				000000000000000000000033 /* ContentView.swift in Sources */,
+				000000000000000000000034 /* Vendor.swift in Sources */,
+				000000000000000000000035 /* KeychainTokenStore.swift in Sources */,
+				000000000000000000000036 /* VendorService.swift in Sources */,
+				000000000000000000000037 /* VendorLocatorStore.swift in Sources */,
+				000000000000000000000038 /* GoogleMapsConfiguration.swift in Sources */,
+				000000000000000000000039 /* VendorListView.swift in Sources */,
+				00000000000000000000003A /* MapScreenView.swift in Sources */,
+				00000000000000000000003B /* GoogleMapView.swift in Sources */,
+				00000000000000000000003C /* SettingsView.swift in Sources */,
+				00000000000000000000003D /* PlaceSearchView.swift in Sources */,
+				000000000000000000000048 /* VendorLocatorBehaviour.swift in Sources */,
+				000000000000000000000049 /* VendorLocatorInteractor.swift in Sources */,
+				000000000000000000000050 /* VendorLocationManager.swift in Sources */,
+				000000000000000000000051 /* VendorDetailView.swift in Sources */,
+				000000000000000000000052 /* ManualVendorEntryView.swift in Sources */,
+				000000000000000000000056 /* LocalVendorDataService.swift in Sources */,
+				000000000000000000000058 /* NetworkMonitor.swift in Sources */,
+				00000000000000000000005A /* VendorListViewModel.swift in Sources */,
+				00000000000000000000005C /* MapScreenViewModel.swift in Sources */,
+				00000000000000000000005E /* VendorDetailViewModel.swift in Sources */,
+				000000000000000000000060 /* ManualVendorEntryViewModel.swift in Sources */,
+				000000000000000000000062 /* PlaceSearchViewModel.swift in Sources */,
+				000000000000000000000064 /* SettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000003F /* VendorDecodingTests.swift in Sources */,
+				FFFFFFFFFFFFFFFFFFFFFFA1 /* TestDoubles.swift in Sources */,
+				FED635B879BB424C9ED112FC /* VendorListViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED112FE /* MapScreenViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED11300 /* VendorDetailViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED11302 /* ManualVendorEntryViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED11304 /* PlaceSearchViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED11306 /* SettingsViewModelTests.swift in Sources */,
+				FED635B879BB424C9ED11308 /* VendorLocatorInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000004 /* VendorLocator */;
+			targetProxy = 000000000000000000000046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00000000000000000000002F /* Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2L6L73E3;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VendorLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VendorLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00000000000000000000002F /* Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2L6L73E3;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VendorLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VendorLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000000000000000000000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VendorLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VendorLocator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VendorLocator";
+			};
+			name = Debug;
+		};
+		000000000000000000000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VendorLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VendorLocator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VendorLocator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000E /* Build configuration list for PBXProject "VendorLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000011 /* Debug */,
+				000000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000F /* Build configuration list for PBXNativeTarget "VendorLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000013 /* Debug */,
+				000000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000010 /* Build configuration list for PBXNativeTarget "VendorLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000015 /* Debug */,
+				000000000000000000000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		000000000000000000000040 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 11.2.0;
+			};
+		};
+		000000000000000000000041 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000000000000000000000042 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000000000040 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		000000000000000000000043 /* GooglePlacesSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000000000041 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlacesSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
