@@ -1,4 +1,4 @@
-# Vendor Locator (Senior iOS Take-Home)
+# Vendor Locator
 
 A small SwiftUI app for browsing vendors, placing them on Google Maps, adding places through Google Places, and managing an API session token in the iOS Keychain.
 
